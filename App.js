@@ -1,5 +1,8 @@
-const heading = React.createElement("h1", {}, "hellow world from react");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
+const heading = React.createElement("h1", {}, "hellow world from react");
+console.log("heading ", heading);
 const parent = React.createElement(
   "div",
   { id: "parent" },

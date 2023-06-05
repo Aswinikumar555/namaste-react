@@ -1,0 +1,9 @@
+package.json is configuration for NPM
+"parcel": "^2.9.1" [^ caret]
+
+React
+
+1, diffrence b/w ^ and ~ in node version
+    ^ will update monir vesrion updates auto matcially ex 2.9.1 to 2.9.2
+    ~ will update major vesrion updates auto matcially ex 3.9.1 to 3.9.1
+2, transitive dependencies
