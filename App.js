@@ -43,7 +43,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const root2 = ReactDOM.createRoot(document.getElementById("root2"));
 // root.render(jsxHeading);
-// root.render(HeadingComponent());
+root.render(HeadingComponent());
 
 root.render(<HeadingComponent />);
 root2.render(<HeadingComponent />);
