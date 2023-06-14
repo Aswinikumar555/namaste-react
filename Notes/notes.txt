@@ -2,8 +2,32 @@ package.json is configuration for NPM
 "parcel": "^2.9.1" [^ caret]
 
 React
+// core react
+// React.createElement => ReactElement Js Object => HTMLElement(render)
+const heading = React.createElement("h1", {}, "hellow world from react");
+console.log("heading ", heading);
+const parent = React.createElement(
+  "div",
+  { id: "parent" },
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", {}, "h1"),
+    React.createElement("h2", {}, "h2"),
+  ])
+);
+
+// JSX (Transpile before it reaches to JS Engine) - PARCEL - Babel
+// JSX =>  React.createElement =>  ReactElement Js Object => HTMLElement(render)
+const jsxHeading = <h1>jsx heading</h1>;
+console.log("jsxHeading ", jsxHeading);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
 
 1, diffrence b/w ^ and ~ in node version
     ^ will update monir vesrion updates auto matcially ex 2.9.1 to 2.9.2
     ~ will update major vesrion updates auto matcially ex 3.9.1 to 3.9.1
 2, transitive dependencies
+3, JSX -> jsx is not a html in js [its a HTML/XML like syntax]
+4, Babel (Transpiler/JS Compiler) convert JSX to React code and convert old browsers under stand code also
+5, Function commponent is, the function which return jsx code
